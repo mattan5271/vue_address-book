@@ -17,7 +17,7 @@
       </v-flex>
 
       <router-link :to="{ name: 'AddressForm' }">
-        <v-btn>連絡先追加</v-btn>
+        <v-btn color="info">連絡先追加</v-btn>
       </router-link>
     </v-layout>
   </v-container>
@@ -28,16 +28,16 @@ export default {
   data() {
     return {
       headers: [
-        { text: "名前", value: "name" },
-        { text: "電話番号", value: "tel" },
-        { text: "メールアドレス", value: "email" },
-        { text: "住所", value: "address" }
+        { text: '名前', value: 'name' },
+        { text: '電話番号', value: 'tel' },
+        { text: 'メールアドレス', value: 'email' },
+        { text: '住所', value: 'address' },
       ],
-      addresses: []
+      addresses: [],
     };
   },
   created() {
     this.addresses = this.$store.state.addresses;
-  }
+  },
 };
 </script>
