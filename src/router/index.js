@@ -18,7 +18,7 @@ const routes = [
     component: Addresses,
   },
   {
-    path: '/address_form',
+    path: '/addresses/:address_id?/edit',
     name: 'AddressForm',
     component: AddressForm,
   },
